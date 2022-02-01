@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+}
+
+/* Para que el sidebar tome el 100% de la pantalla */
+
+#sidebar {
+    height: 100%;
+    min-height: 100vh;
+    min-width: 180px;
+}

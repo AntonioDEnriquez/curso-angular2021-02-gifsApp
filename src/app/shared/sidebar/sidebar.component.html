@@ -1,0 +1,11 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">Gift-app</h3>
+    <hr class="text-light">
+
+    <div class="list-group list-reset">
+        <!-- list-group-item-action para que se pueda hacer clic en el, el titlecase es para capitalizar el item osea mostrar Antonio Enriquez mayusculas y minusculas -->
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let item of historial"
+            (click)="buscar(item)">{{item |
+            titlecase}}</a>
+    </div>
+</div>

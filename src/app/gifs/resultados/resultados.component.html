@@ -1,0 +1,17 @@
+<!-- <ul>
+    <li *ngFor="let gif of resultados">{{gif.title}}</li>
+</ul> -->
+
+<div class="row">
+    <div class="col-sm-6 col-md-4 animate__animated animate__fadeIn animate__fast" *ngFor="let gif of resultados">
+        <div class="card">
+            <!-- [src] podemos establecer que angular maneje el valor de src -->
+            <img class="card-img-top" [src]="gif.images.downsized_medium.url" alt="">
+            <div class="card-body">
+                <p class="card-text">
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
